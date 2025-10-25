@@ -1,5 +1,6 @@
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
 import { AppBar, MenuItem, Toolbar } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 const NavBar = () => {
   const StyledToobar = styled(Toolbar)(({}) => ({

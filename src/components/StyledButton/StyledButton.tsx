@@ -1,4 +1,6 @@
-import styled from "@emotion/styled";
+// import styled from "@emotion/styled";
+
+import { styled } from "@mui/material/styles";
 
 interface StyledButtonProps {
   children: React.ReactNode;
@@ -18,7 +20,7 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children, onClick }) => {
     justifyContent: "center",
     gap: "10px",
     "&:hover": {
-      backgroundColor: theme.palette.secondary.main,
+      backgroundColor: theme.palette.secondary.light,
     },
   }));
 
@@ -30,8 +32,3 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children, onClick }) => {
 };
 
 export default StyledButton;
-
-const StyledImg = styled("img")(() => ({
-  width: "100%",
-  borderRadius: "50%",
-}));
